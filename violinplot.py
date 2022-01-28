@@ -19,10 +19,10 @@ def run_bandits(environment, number_of_steps):
 if __name__ == '__main__':
     # Making a the multi-arm bandit based on table 1
     environment = BanditEnvironment(4)
-    environment.set_bandit(0, Bandit(1, 1))
-    environment.set_bandit(1, Bandit(1, 2))
-    environment.set_bandit(2, Bandit(2, 1))
-    environment.set_bandit(3, Bandit(2, 2))
+    environment.set_bandit(0, Bandit(4, 1))
+    environment.set_bandit(1, Bandit(4.1, 2))
+    environment.set_bandit(2, Bandit(3.9, 1))
+    environment.set_bandit(3, Bandit(4.2, 2))
 
     # Generate violin plot
     rewards = run_bandits(environment, 1000)
