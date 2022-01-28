@@ -14,7 +14,6 @@ def run_bandits(environment, number_of_steps):
             obs, reward, done, info = environment.step(b)
             rewards[s,b] = reward
         print(f'bandit={b}, mean={np.mean(rewards[b,:])}, sigma={np.std(rewards[b,:])}')
-    rewards = [reward[:,0],reward[:,1]reward[:,2]reward[:,3]]
     return rewards
         
 if __name__ == '__main__':
