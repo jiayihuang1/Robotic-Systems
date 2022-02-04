@@ -24,8 +24,10 @@ if __name__ == '__main__':
     environment.set_bandit(2, Bandit(3.9, 1))
     environment.set_bandit(3, Bandit(4.2, 1))
 
+    # Set number of steps
+    number_of_steps = 1000
     # Run bandits
-    rewards = run_bandits(environment, 1000)
+    rewards = run_bandits(environment, number_of_steps)
    
     # Generate violin plot
     plt.figure()
