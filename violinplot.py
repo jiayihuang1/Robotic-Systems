@@ -1,8 +1,8 @@
 import numpy as np
 import gym
 import matplotlib.pyplot as plt
-from bandit import Bandit
-from bandit import BanditEnvironment
+from bandits.bandit import Bandit
+from bandits.bandit import BanditEnvironment
 
 def run_bandits(environment, number_of_steps):
     # Making and array to store all the rewards
