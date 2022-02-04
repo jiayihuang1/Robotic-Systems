@@ -24,8 +24,10 @@ if __name__ == '__main__':
     environment.set_bandit(2, Bandit(3.9, 1))
     environment.set_bandit(3, Bandit(4.2, 1))
 
-    # Generate violin plot
+    # Run bandits
     rewards = run_bandits(environment, 1000)
+   
+    # Generate violin plot
     plt.figure()
     plt.violinplot(rewards, showmeans=True, showextrema=True, showmedians=True);
     plt.xlabel('Charging Locaction')
