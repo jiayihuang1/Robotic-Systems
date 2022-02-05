@@ -32,6 +32,7 @@ if __name__ == '__main__':
     number_of_repeats = 10
     # Set epsilon
     epsilon = 0.01
+    print(f'epsilon = {epsilon}')
     # Create agent
     agent = EpsilonGreedyAgent(environment, epsilon)
 
