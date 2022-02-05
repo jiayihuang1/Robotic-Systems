@@ -16,7 +16,7 @@ def Monte_carlo(agent, number_of_steps, number_of_repeats):
             action_history[s], reward_history[s] = agent.step()
         means[r] = np.mean(reward_history)
         stds[r] = np.std(reward_history)
-    print(f'mean mean = {np.mean(means)}, mean std = {np.mean(stds)}')
+    print(f'mean mean = {np.mean(means)}, mean sigma = {np.mean(stds)}')
 
 if __name__ == '__main__':
     # Making a the multi-arm bandit based on table 1
