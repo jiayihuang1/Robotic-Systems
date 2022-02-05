@@ -25,7 +25,7 @@ if __name__ == '__main__':
     environment.set_bandit(3, Bandit(4.2, 1))
 
     # Set number of steps
-    number_of_steps = 1000
+    number_of_steps = 10000
     # Set number of repeats
     number_of_repeats = 10
     # Set epsilon
