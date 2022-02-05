@@ -8,15 +8,13 @@ from bandits.epsilon_greedy_agent import EpsilonGreedyAgent
 
 def Monte_carlo(agent, number_of_steps, number_of_repeats):
     means = np.zeros(number_of_repeats)
-    stds = np.zeros(number_of_repeats)
     for r in range(0, number_of_repeats):
         reward_history = np.zeros(number_of_steps)
         action_history = np.zeros(number_of_steps)
         for s in range(0,number_of_steps):
             action_history[s], reward_history[s] = agent.step()
         means[r] = np.mean(reward_history)
-        stds[r] = np.std(reward_history)
-    print(f'mean mean = {np.mean(means)}, mean sigma = {np.mean(stds)}')
+    print(f'Mean rewards = {np.mean(means)}')
 
 if __name__ == '__main__':
     # Making a the multi-arm bandit based on table 1
