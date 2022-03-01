@@ -47,7 +47,6 @@ if __name__ == '__main__':
     
     # Wait for a key press
     value_function_drawer.wait_for_key_press()
-    value_function_drawer.wait_for_key_press()
     
     # Q3i: Add code to evaluate value iteration down here.
     # Create the policy iterator
@@ -75,8 +74,6 @@ if __name__ == '__main__':
 
     # Wait for a key press
     value_function_drawer_2.wait_for_key_press()
-    value_function_drawer_2.wait_for_key_press()
-    value_function_drawer_2.wait_for_key_press()
-    value_function_drawer_2.wait_for_key_press()
+
     
     
