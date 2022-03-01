@@ -55,5 +55,3 @@ if __name__ == '__main__':
     
     # Wait for a key press
     value_function_drawer.wait_for_key_press()
-    value_function_drawer.wait_for_key_press()
-    value_function_drawer.wait_for_key_press()
