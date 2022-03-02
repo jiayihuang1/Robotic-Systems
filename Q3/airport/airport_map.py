@@ -209,7 +209,24 @@ class AirportMap(CellGrid):
         dY = current_coords[1] - last_coords[1]
         L = math.sqrt(dX * dX + dY * dY)
             
-        return L
+        # store current cell coordinates
+        cell = self._map[current_coords[0]][current_coords[1]]
+
+        # Penalty-factor calculation
+        cell_type = cell.cell_type()
+
+        if cell_type == MapCellType.CUSTOMS_AREA:
+            a = 100
+
+        elif cell_type == MapCellType.SECRET_DOOR:
+            a = 5
+
+        else:
+            a = 1
+
+        L = a * L
+
+        # return L
         return L
         
     def populate_search_grid(self, search_grid):
